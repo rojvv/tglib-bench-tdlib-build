@@ -1,4 +1,5 @@
 #!/bin/sh
+git lfs track "*.a"
 sudo apt-get update
 sudo apt-get install zlib1g-dev libssl-dev gperf
 rm -rf td
@@ -12,7 +13,6 @@ cd ..
 cd ..
 rm -rf tdlib
 git add -A td
-git lfs track "*.a"
 git add .gitattributes
 git config user.name "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
