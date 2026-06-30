@@ -12,6 +12,8 @@ cd ..
 cd ..
 rm -rf tdlib
 git add -A td
+git lfs track "*.a"
+git add .gitattributes
 git config user.name "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git commit -m "Build TDLib" || exit 0
