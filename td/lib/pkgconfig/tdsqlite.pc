@@ -2,8 +2,8 @@ prefix=/home/runner/work/tglib-bench-tdlib-build/td
 
 Name: tdsqlite
 Description: Telegram Library - SQLite
-Version: 1.8.46
+Version: 1.8.65
 
 CFlags: -I"${prefix}/include"
 Libs: -L"${prefix}/lib" -ltdsqlite
-Libs.private: -L"/usr/lib/x86_64-linux-gnu" -l:libcrypto.so -ldl -L"/usr/lib/x86_64-linux-gnu" -l:libz.so
+Libs.private: -L"/usr/lib/x86_64-linux-gnu" -lcrypto -ldl -L"/usr/lib/x86_64-linux-gnu" -lz
